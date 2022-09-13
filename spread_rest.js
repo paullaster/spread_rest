@@ -12,4 +12,22 @@ let arr3 = []
 arr3.push.apply(arr3,arr1);
 arr3.push.apply(arr3,arr2);
 //arr3 = [...arr3, ...arr1, ...arr2]
-console.log(arr3);
+let nameArray = ["okoth","cynthia"];
+let lt = nameArray.splice(0,1);
+
+
+let input = [1, "Turing",{x:2},[3,4]];
+delete input[1];
+console.log(input.length);
+
+
+for(let i=0; i<input.length; i++){
+    if(input[i]=="Turing"){
+        input.splice(i,1);
+    }
+    else{
+        console.log(input[i]);
+    }
+}
+console.log(lt);
+
